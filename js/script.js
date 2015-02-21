@@ -4,6 +4,11 @@ $(document).ready(function(){
         		},function(){
     				$(this).removeClass("toolbuttonhover").addClass("toolbutton");
         		});
+            $("#bu4,#bu5").hover(function(){
+                    $(this).removeClass("toolbutton-sign").addClass("toolbutton-signonhover");
+                },function(){
+                    $(this).removeClass("toolbutton-signonhover").addClass("toolbutton-sign");
+                });
     		$("#search").hover(function(){
     				$(this).removeClass("searchbutton").addClass("searchhover");
         		},function(){

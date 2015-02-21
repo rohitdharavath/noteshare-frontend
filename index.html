@@ -1,5 +1,6 @@
 <html>
-<!doctype html>
+	
+	<!doctype html>
 <html>
 <head lang="en">
 	<meta charset="utf-8">
@@ -20,38 +21,45 @@
 </head>
 	
 	<body>
-		<div class="container-fluid">
-			
-			<div style="position:absolute;top:0%;margin:0;padding:0;border:0">
-				<div class="tool" >
-					<img src="logo.png" style="width:auto;height:110px;position:absolute;left:5%"/>
-					<div style="position:absolute;top:30%;right:5%;width:40%;height:35%">
-						<button id="bu1" class = "toolbutton">
-							HOME
-						</button>
-						<button id="bu2" class = "toolbutton">
-							ABOUT US
-						</button>
-						<button id="bu3" class = "toolbutton">
-							CONTACT US
-						</button>
-						<button id="bu3" class = "toolbutton">
-							SIGN IN
-						</button>
-					</div>
-				</div>
-			</div>
+		<div class="container-fluid" id="navbar">
 		
-		<div class="cont" style="margin-top:5%;margin-bottom:5%;height:90%">
-				<div style="position:absolute;top:150px;left:10%;right:10%;width:80%;height:400px">
-					<div  style="position:absolute;top:20%;left:4%;width:45%;height:40%">
+		<div style="position:relative;top:0%;margin:0;padding:0;border:0;height:auto">
+		
+		<div  class="tool" >
+			<img src="logo.png" style="width:auto;height:110px;position:absolute;left:5%"/>
+			<div style="position:absolute;top:30%;right:0;width:700px; height:35%">
+
+			<button id="bu1" class = "toolbutton">
+
+				HOME
+			</button>
+			<button id="bu2" class = "toolbutton">
+				ABOUT
+			</button>
+			<button id="bu3" class = "toolbutton">
+				CONTACT
+			</button>
+			<button id="bu4" class = "toolbutton-sign" >
+				SIGN IN
+			</button>
+			<button id="bu5" class = "toolbutton-sign">
+				SIGN UP
+			</button>
+			</div>
+		</div>
+	
+		</div>
+		
+		<div class="cont" >
+				<div style="position:absolute;top:50px;left:10%;right:10%;width:80%;min-height:400px">
+					<div  style="position:absolute;top:40%;left:4%;width:45%;height:40%">
 						<div style="color:white;position:relative;margin-bottom:5%;">
 							<h4 style="font-size: 32px;"><strong>Your Note Search</strong> <span style="color:#2e9ba0;">starts here</span></h4>
 						</div>
 						<div class="input-group">
      					 <input type="text" class="form-control" placeholder="Search Notes...">
      					 <span class="input-group-btn">
-     					   <button class="btn btn-info" style="background-color:#1abc9c;" type="button">Search</button>
+     					   <a href="#"  class="btn btn-info btn-md" id="btn-search"><span class="glyphicon glyphicon-search"></span> Search</a>
      					 </span>
    					 </div>
 						
@@ -67,16 +75,16 @@
 						</div-->
 						
 						
-						<div style="margin-top:5%;color:white;font-weight:lighter;font-family:"Titillium Web", sans-serif;font-size:28px">
-							"Notes Worth Sharing"
+						<div style="margin-top:5%;color:white;font-weight:lighter;font-family:"Titillium Web", sans-serif;">
+							<h4>"Notes Worth Sharing"</h4>
 						</div>	
 					</div>
-					<div style="width:40% ;height:100%;position:absolute;right:0%;top:0%" >
+					<div style="width:40% ;height:100%;position:absolute;right:0%;top:15%" >
 						<img src="share.png" style="width:90%" />
 					</div>
 				</div>	
 		</div>
-		<div class="topics" style="position:relative;height:90%">
+		<div class="topics" style="position:relative">
 			<div style="position:relative;top:50px;left:10%;right:10%;width:80%;height:400px;text-align:center;font-family:Verdana;font-size:34px">
 				Trending Topics in your Region
 				<div style="margin-top:10px">
@@ -110,19 +118,31 @@
 			</div>
 
 		</div>
-		<div class="credit" style="position:relative;height:90%">
-			<div style="position:relative;top:100px;left:10%;right:10%;width:80%;height:400px;text-align:center;font-family:Verdana;font-size:34px;color:white">
+		<div class="credit" style="position:relative">
+			<div style="position:relative;top:50px;left:10%;right:10%;width:80%;height:80%;text-align:center;font-family:Verdana;font-size:34px;color:white">
 				Share your Notes and <strong>Earn credits</strong>
 				<div style="margin-top:10px">
 				<img src="divider.png" style="width:40%"/>
 				<div style="margin-top:50px;font-family:Sans-Serif">
-					It's simple try it out <a style="font-size:24px;" class="btn btn-warning" href="#"><strong>Upload Notes</strong></a>
-					<span class="glyphicon glyphicon-open" aria-hidden="true"></span>
+					It's simple try it out <a style="font-size:24px;background-color:#333333;border-color:#333333" class="btn btn-warning" href="#"><strong>Upload Notes </strong><span class="glyphicon glyphicon-open" aria-hidden="true"></span></a>
+					
+					
 				</div>
 				</div>
 			</div>
 		</div>
-	</div>		
+
+
+	</div>
+
+	<div id="footer">
+	<div class="container">
+		<p style="color:#fff;" class="copyright">Copyright © 2015 - <a href="noteshare.in">NoteShare</a></p>
+	</div>	
+	</div>
+			
+
+
 	</body>
 	
 	<!--script-->
